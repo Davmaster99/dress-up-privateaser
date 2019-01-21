@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Privateaser</title>
-  </head>
-  <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
-    </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="privateaser.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+    <title>Privateaser</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info mw-100">
+        <img src="img/favicon.ico" class="rounded d-inline-block align-top" width="40" height="40">
+        <a class="navbar-brand text-white font-weight-bold " href="#">
+            <h2>Privateaser</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+
+    </nav>
+    <container class="container-fluid border">
+        <div class="container">
+            <div class="d-flex flex-column border">
+                <div class="Bar" id="bar">
+                    <div class="p-2">
+                        Bar Name <input class="js-name" type="text" placeholder="Bar name" />
+                    </div>
+                    <div class="p-2">Price / Hour <input class="js-price-by-hour" type="number" placeholder="Price by hour" /></div>
+                    <div class="p-2">Price / Person <input class="js-price-by-person" type="number" placeholder="Price by person" /></div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="p-2">Booker name <input class="js-name" type="text" placeholder="Booker name" /></div>
+                    <div class="p-2">Time in h <input class="js-time" type="number" placeholder="Time in h" /></div>
+                    <div class="p-2">Number of Persons <input class="js-persons" type="number" placeholder="Persons" />
+                        <div class="input-group-text" width="30" height="30">
+
+                            <div class="custum-control-input checkbox">
+                                <input class="js-option" type="checkbox" placeholder="Deductible option" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <button class="btn btn-success" id="compute">Compute</button>
+            </div>
+        </div>
+        <div id="actors" style="color:black"></div>
+        <script src="js/privateaser.js"></script>
+        <script src="js/index.js"></script>
+    </container>
+</body>
+
 </html>

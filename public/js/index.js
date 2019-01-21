@@ -8,10 +8,13 @@
     const template = actors.map(actor => {
       return `
         <div class="actor">
-          <span>${actor.who}</span>
-          <span>${actor.type}</span>
-          <span>${actor.amount}</span>
-        </div>
+         <ul class="list-group">
+           <li class="list-group-item d-flex justify-content-between align-items-center text-white bg-info">
+    ${actor.who} : ${actor.type}
+              <span class="badge badge-light badge-pill">${actor.amount}</span>
+           </li>
+        </ul>
+      </div>
       `;
     }).join('');
 

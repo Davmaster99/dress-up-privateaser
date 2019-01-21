@@ -7,7 +7,6 @@ const PRIVATEASER = (() => {
   const PERCENT_INSURANCE = 0.5;
   const TREASURY_TAX_PERSON = 1;
 
-
   /**
    * Get bar information
    *
